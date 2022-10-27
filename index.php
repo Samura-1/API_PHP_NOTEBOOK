@@ -79,7 +79,7 @@
                      <span style="font-weight: bold">GET</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
                     <br>
                     <a href="/v1/notebook/1">/v1/notebook/1</a>
-                    <p>Методо для получение конкретной записи по ее ID </p>
+                    <p>Метод для получение конкретной записи по ее ID </p>
                 </li>
             </ul>
         </div>
