@@ -89,7 +89,7 @@
             <ul>
                 <li>
                     <span style="font-weight: bold">POST</span> /api/v1/notebook/
-                        <p>Методо добавления новой записи
+                        <p>Метод добавления новой записи
                          <br>
                         1. ФИО (обязательное)
                         <br>
