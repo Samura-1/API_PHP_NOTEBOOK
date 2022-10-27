@@ -1,13 +1,12 @@
 <?php
 class api
 {
-    protected $connect;
+    protected PDO $connect;
 
     public function __construct()
     {
         $this->connect = new PDO('mysql:host=localhost;dbname=notebook', 'root', '');
     }
-
     public function getNotebook()
     {
         $res = $this->connect->prepare("SELECT * FROM `netebook`");
@@ -132,7 +131,7 @@ class api
             http_response_code(410);
             $res = [
                 'status' => true,
-                'messages' => '$lastId',
+                'messages' => 'deleted id ' . $lastId,
             ];
         }
         echo json_encode($res);
