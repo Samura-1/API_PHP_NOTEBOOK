@@ -24,71 +24,103 @@
         <div class="col-md-4">
             <p>Записная книжка NOTEBOOK</p>
             <p>Экономьте время. Организуйтесь. Работайте вместе.</p>
+            <h2>Доступные методы</h2>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4"></div>
-        <div class="row">
-            <div class="col-md-4" id="method">
-                <h2>Доступные методы</h2>
-                <p>
-                    <ul>
-                        <li>
-                            <span style="font-weight: bold">GET</span> /api/v1/notebook/
-                            <br>
-                            <a href="/v1/notebook">/api/v1/notebook/</a>
-                        <p>Получает список всех элементов из базы данных в формате json
-                            <br>
-                            1 элемент это :
-                            <br>
-                            1. ФИО (обязательное)
-                            <br>
-                            2. Компания
-                            <br>
-                            3. Телефон (обязательное)
-                            <br>
-                            4. Email (обязательное)
-                            <br>
-                            5. Дата рождения
-                            <br>
-                            6. Фото
-                        </p>
-                        </li>
-                         <li>
-                             <span style="font-weight: bold">GET</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
-                            <br>
-                            <a href="/v1/notebook/1">/v1/notebook/1</a>
-                            <p>Методо для получение конкретной записи по ее ID </p>
-                        </li>
-                        <li>
-                            <span style="font-weight: bold">POST</span> /api/v1/notebook/
-                                <p>Методо добавления новой записи
-                                 <br>
-                                1. ФИО (обязательное)
-                                <br>
-                                 2. Компания
-                                <br>
-                                3. Телефон (обязательное)
-                                <br>
-                                4. Email (обязательное)
-                                <br>
-                                5. Дата рождения
-                                <br>
-                                6. Фото
-                        </p>
-                        </li>
-                        <li>
-                            <span style="font-weight: bold">POST</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
-                            <p>Метод для редактирование существующий записи по ее ID</p>
-                        </li>
-                        <li>
-                            <span style="font-weight: bold">DELETE</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
-                            <p>Метод удаление записи по ее ID</p>
-                        </li>
-                    </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <span style="font-weight: bold">GET</span> /api/v1/notebook/
+                    <br>
+                    <a href="/v1/notebook">/api/v1/notebook/</a>
+                <p>Получает список всех элементов из базы данных в формате json
+                    <br>
+                    1 элемент это :
+                    <br>
+                    1. ФИО (обязательное)
+                    <br>
+                    2. Компания
+                    <br>
+                    3. Телефон (обязательное)
+                    <br>
+                    4. Email (обязательное)
+                    <br>
+                    5. Дата рождения
+                    <br>
+                    6. Фото
                 </p>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <span style="font-weight: bold">GET </span>/api/v1/notebook/pagen/1?page=4</span>
+                    <a href="v1/notebook/pagen/2?page=1">/api/v1/notebook/pagen/2?page=1</a>
+                    <p>Получает список всех элементов из базы данных по странично</p>
+                    <p>
+                        <span style="font-weight: bold">pagen/1</span>
+                        <br>
+                        pagen/1- колличество элементов на странице
+                        <br>
+                        <span style="font-weight: bold">?page=4</span>
+                        <br>
+                        ?page=4 номер страницы
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                 <li>
+                     <span style="font-weight: bold">GET</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
+                    <br>
+                    <a href="/v1/notebook/1">/v1/notebook/1</a>
+                    <p>Методо для получение конкретной записи по ее ID </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <span style="font-weight: bold">POST</span> /api/v1/notebook/
+                        <p>Методо добавления новой записи
+                         <br>
+                        1. ФИО (обязательное)
+                        <br>
+                         2. Компания
+                        <br>
+                        3. Телефон (обязательное)
+                        <br>
+                        4. Email (обязательное)
+                        <br>
+                        5. Дата рождения
+                        <br>
+                        6. Фото
+                </p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <span style="font-weight: bold">POST</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
+                    <p>Метод для редактирование существующий записи по ее ID</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <span style="font-weight: bold">DELETE</span> /api/v1/notebook/ <span style="font-weight: bold">&lt;id&gt;</span>/
+                    <p>Метод удаление записи по ее ID</p>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

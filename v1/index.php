@@ -15,7 +15,9 @@ $api = new api();
 switch ($method) {
     case 'GET':
         if ($type === 'notebook') {
-            if (isset($id)) {
+            if (isset($params[2])) {
+                $api->getNotebookPagen($params[2]);
+            }   elseif (isset($id)) {
                 $api->getNotebookById($id);
             } else {
                 $api->getNotebook();
@@ -37,3 +39,4 @@ switch ($method) {
         }
         break;
 }
+
