@@ -1,7 +1,6 @@
 <?php
 class api
 {
-    protected $method;
     protected $connect;
 
     public function __construct()
